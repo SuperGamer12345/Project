@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	std::cout << "What's your favorite movie or TV series?" << std::endl;
+	
+	std::string text;
+	std::getline(std::cin, text);
+	std::cout << text << std::endl;
+	std::cout << "Type in language: " << std::endl;
+	std::string text2;
+	std::getline(std::cin, text2);
+	std::cout << text2 << std::endl;
+	if (text2 == "Italian") {
+		std::cout << "Parla italiano?" << std::endl;
+		std::string text3;
+		std::getline(std::cin, text3);
+		if (text3 == "Un po") {
+			std::cout << "bene!" << std::endl;
+		}
+	}
+}
